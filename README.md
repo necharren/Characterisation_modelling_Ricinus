@@ -18,14 +18,25 @@ The script is divided into four sections:
   ## BOXPLOTS
 This section compares the climatic conditions occupied by native and invaded populations of *Ricinus communis* using boxplots and basic statistical analyses.
 
+# Archives used
+## MaxEnt Reports
+
+It contains two folders: iberica_modelling and native_modelling. The outputs for each MaxEnt model referenced in the paper are contained within their respective folders. These results are further detailed in the HTML report file. Additionally, all spatial raster layers produced by MaxEnt are available in the plots folder; these layers served as the basis for subsequent GIS analyses in QGIS.
+
+## Vector layers
+
+It contains five folders: *bio6 layer*, *biomes_horn_africa*, *biomes_iberia*, *intersection_biomes* and *Observations*. 
+*bio6 layer* contains the vector layer of areas that do not fall below 4°C referenced in the paper.
+*biomes_horn_africa* contains four vector layers that underpin the biogeographic analyses for northeast Africa: ecoregions_horn subdivides the modelling extent by biome boundaries; nat_biomes_high isolates areas where the MaxEnt model predicts high environmental suitability; nat_biomes_punts repeats the biome subdivision while tallying the number of Ricinus occurrences inside each polygon; and ricino_nat supplies the 574 georeferenced Ricinus communis records.
+*biomes_iberia* applies the same biome-based layers subdivision to the Iberian Peninsula rather than northeast Africa.
+*intersection_biomes* is the vector layer that maps the spatial overlap between the biome classifications used in the northeast-African and Iberian models.
+*Observations* contains: *ric_occs* gathers the global *Ricinus communis* dataset cleaned with the bio6_nofrost mask (GBIF https://doi.org/10.15468/dl.t3cbxd) and its three derivatives: *ric_occs_iberpred* retains only those points that lie inside the Iberian Peninsula model’s prediction zone, *ric_occs_natpred* does the same for the northeast-Africa model, and *ric_occs_overlappred* keeps the subset that falls within the predicted suitable areas of both models.
+
+
+
+
+
+
 If there is any issue, contact with: echarrenlucendonicolas@gmail.com
-
-
-
-
-
-
-
-
 
 
